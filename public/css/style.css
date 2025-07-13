@@ -1,0 +1,219 @@
+/* Add your custom styles here */
+html,
+body {
+    height: 100dvh;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+.login-wrapper {
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.login-card {
+    background-color: red;
+    width: 100%;
+    max-width: 400px;
+}
+
+
+
+tr.hide-table-padding td {
+    padding: 0;
+}
+
+.expand-button {
+    position: relative;
+}
+
+.accordion-toggle .expand-button:after {
+    position: absolute;
+    left: .75rem;
+    top: 50%;
+    transform: translate(0, -50%);
+    content: '-';
+}
+
+.accordion-toggle.collapsed .expand-button:after {
+    content: '+';
+}
+
+
+#addReceipt {
+    border-color: #198754;
+
+}
+
+#addReceipt:hover {
+    color: white;
+    background-color: #495057;
+    border-color: rgb(33, 175, 109);
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
+}
+
+#addReceipt a:hover {
+    text-decoration: none;
+}
+
+.receipt:hover {
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
+    border: grey solid 1px;
+}
+
+/* Ensure DataTable control icon is visible on dark theme */
+table.dataTable>tbody>tr.child span.dtr-title {
+    font-weight: bold;
+    color: #fff;
+    /* Adjust if needed based on your dark theme specifics */
+}
+
+table.dataTable>tbody>tr.child ul.dtr-details {
+    color: #fff;
+    /* Adjust if needed */
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control::before,
+table.dataTable.dtr-inline.collapsed>tbody>tr>th.dtr-control::before {
+    background-color: #6c757d;
+    /* Or a color that contrasts with your row background */
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td.dtr-control::before,
+table.dataTable.dtr-inline.collapsed>tbody>tr.parent>th.dtr-control::before {
+    background-color: #0d6efd;
+    /* Or your primary color for "open" state */
+}
+
+#ReceiptTable tbody tr.receipt-main-row {
+    cursor: pointer;
+}
+
+.receipt-preview {
+    font-family: 'Menlo', 'Monaco', 'Consolas', 'Courier New', monospace;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    max-height: 60vh;
+    overflow-y: auto;
+    color: black;
+}
+
+.receipt-preview h5.preview-section-title {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.receipt-preview h5.preview-section-title i {
+    margin-right: 8px;
+}
+
+.receipt-preview p.preview-data {
+    margin-bottom: 8px;
+    padding-left: 10px;
+    word-break: break-word;
+}
+
+.receipt-preview .item-section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.receipt-preview .item-line {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+    border-bottom: 1px dotted #eee;
+}
+
+.receipt-preview .item-line:last-child {
+    border-bottom: none;
+}
+
+.receipt-preview .item-line .item-name-qty {
+    flex-grow: 1;
+    padding-right: 10px;
+    text-align: left;
+}
+
+.receipt-preview .item-line .item-price-total {
+    min-width: 100px;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.receipt-preview .totals-line {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 15px;
+    border-top: 2px solid #333;
+    padding-top: 10px;
+}
+
+.receipt-preview .bought-for-list {
+    font-size: 0.85em;
+    color: #555;
+    padding-left: 25px;
+    margin-top: -2px;
+    margin-bottom: 4px;
+}
+
+.receipt-preview .section-header {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.receipt-preview .footer-note {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+    margin-top: 20px;
+    font-size: 0.85rem;
+}
+
+.receipt-preview hr.dashed {
+    border: none;
+    border-top: 1px dashed #aaa;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.accordion-button .itemNameText {
+    /* Başlığın taşmasını önlemek için */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex-grow: 1;
+    /* Esnek büyüme */
+    margin-right: 5px;
+    /* Sil butonu ile arasında boşluk */
+}
+
+mark {
+    background-color: #ffc107;
+    /* Bootstrap 'warning' rengi gibi */
+    color: black;
+    padding: 0.2em;
+    border-radius: 3px;
+}

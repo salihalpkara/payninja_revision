@@ -1,0 +1,24 @@
+{
+  "files": {
+    "app_core_php": "D:/Programs/xampp/htdocs/payninja_ai_revision/app/Core.php",
+    "public_htaccess": "D:/Programs/xampp/htdocs/payninja_ai_revision/public/.htaccess",
+    "php_ini": "D:/Programs/xampp/php/php.ini",
+    "apache_httpd_conf": "D:/Programs/xampp/apache/conf/httpd.conf",
+    "apache_error_log": "D:/Programs/xampp/apache/logs/error.log",
+    "apache_php_error_log": "D:/Programs/xampp/apache/logs/php_error.log",
+    "test_user_flow_py": "D:/Programs/xampp/htdocs/payninja_ai_revision/test_user_flow.py",
+    "app_bootstrap_php": "D:/Programs/xampp/htdocs/payninja_ai_revision/app/bootstrap.php",
+    "app_controllers_users_php": "D:/Programs/xampp/htdocs/payninja_ai_revision/app/Controllers/Users.php",
+    "app_helpers_redirect_php": "D:/Programs/xampp/htdocs/payninja_ai_revision/app/helpers/redirect.php",
+    "app_controllers_controller_php": "D:/Programs/xampp/htdocs/payninja_ai_revision/app/Controllers/Controller.php",
+    "app_controllers_receipts_controller_php": "D:/Programs/xampp/htdocs/payninja_ai_revision/app/controllers/ReceiptsController.php"
+  },
+  "pages": {
+    "base_url": "http://localhost/payninja_ai_revision/public",
+    "login_page": "http://localhost/payninja_ai_revision/public/users/login",
+    "register_page": "http://localhost/payninja_ai_revision/public/users/register",
+    "accounts_dashboard": "http://localhost/payninja_ai_revision/public/accounts",
+    "add_receipt_page": "http://localhost/payninja_ai_revision/public/receipts/create",
+    "logout_page": "http://localhost/payninja_ai_revision/public/users/logout"
+  }
+}

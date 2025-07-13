@@ -1,0 +1,26 @@
+# Test results
+/test_results/
+
+# Old project reference
+/old_project/
+
+
+# IDE specific files
+.idea/
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+error_log
+
+/todolist.txt
+
+/CHANGELOG.md
+
+/databaseCreateScript.txt
+
+/investigation/
